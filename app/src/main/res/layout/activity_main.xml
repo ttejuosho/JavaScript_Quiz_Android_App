@@ -12,12 +12,14 @@
         android:orientation="vertical"
         android:layout_marginBottom="25dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="3dp">
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="10dp">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/colorPrimaryDark"
         android:text="Welcome To The JavaScript Quiz" />
 
@@ -33,7 +35,8 @@
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,6 +46,7 @@
                 android:layout_height="wrap_content"
                 android:text="string,length"/>
             <RadioButton
+                android:id="@+id/q1Answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="string.length"/>
@@ -64,7 +68,8 @@
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,6 +79,7 @@
                 android:layout_height="wrap_content"
                 android:text="/“the text” //"/>
             <RadioButton
+                android:id="@+id/q2Answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="// “the text”"/>
@@ -95,46 +101,17 @@
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="confirm. “Hello world”;"/>
             <RadioButton
+                android:id="@+id/q3Answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="confirm. (“Hello world”);"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="confirm.(“Hello world”);"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="confirm[“Hello world”];"/>
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Question 3"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Which of the following is the correct use of the confirm dialog?"/>
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="confirm. “Hello world”;"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="confirm. (“Hello world”);"/>
+                android:text="confirm(“Hello world”);"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -157,8 +134,10 @@
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
             <RadioButton
+                android:id="@+id/q4Answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Asks the user for an input"/>
@@ -184,27 +163,30 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Which of the following is not a use for JavaScript?"/>
+            android:text="What best describes the variables in JavaScript?"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Making websites to respond to user interaction"/>
+                android:text="To allow the user to change language settings"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Creating desktop software"/>
+                android:text="To allow the user change a value's data type"/>
+            <RadioButton
+                android:id="@+id/q5Answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To allow the user to save and call values"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Build apps and games"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Access information on the internet"/>
+                android:text="To allow the user to declare a new data type"/>
         </RadioGroup>
 
 
