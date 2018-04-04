@@ -16,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void onSubmit(View view){
+
+    }
+
     public void answerCheck(View view){
         boolean checked =( (RadioButton) view ).isChecked();
 

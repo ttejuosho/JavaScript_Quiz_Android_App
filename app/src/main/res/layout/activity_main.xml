@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="20sp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#603838"
         android:text="Welcome To The JavaScript Quiz" />
 
         <TextView
@@ -47,6 +47,7 @@
                 android:text="string,length"/>
             <RadioButton
                 android:id="@+id/q1Answer"
+                android:onClick="answerCheck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="string.length"/>
@@ -73,20 +74,25 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="// “the text” //"/>
+                android:text="// “the text” //"
+                android:textSize="17sp"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="/“the text” //"/>
+                android:text="/“the text” //"
+                android:textSize="17sp"/>
             <RadioButton
                 android:id="@+id/q2Answer"
+                android:onClick="answerCheck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="// “the text”"/>
+                android:text="// “the text”"
+                android:textSize="17sp"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="/ “the text” /"/>
+                android:text="/ “the text” /"
+                android:textSize="17sp"/>
         </RadioGroup>
 
         <TextView
@@ -109,6 +115,7 @@
                 android:text="confirm. “Hello world”;"/>
             <RadioButton
                 android:id="@+id/q3Answer"
+                android:onClick="answerCheck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="confirm(“Hello world”);"/>
@@ -138,6 +145,7 @@
             android:layout_marginBottom="10dp">
             <RadioButton
                 android:id="@+id/q4Answer"
+                android:onClick="answerCheck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Asks the user for an input"/>
@@ -180,6 +188,7 @@
                 android:text="To allow the user change a value's data type"/>
             <RadioButton
                 android:id="@+id/q5Answer"
+                android:onClick="answerCheck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="To allow the user to save and call values"/>
@@ -189,7 +198,16 @@
                 android:text="To allow the user to declare a new data type"/>
         </RadioGroup>
 
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Submit Answers"
+            android:textColor="#FEFEFE"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="20dp"
+            android:background="#F32121"
+            android:onClick="onSubmit"/>
 
     </LinearLayout>
 
